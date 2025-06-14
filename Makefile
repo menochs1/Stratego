@@ -9,7 +9,7 @@ CC = g++ # Specify the compiler you wish to use
 CFLAGS = -Wall -Wextra # List any compiler (warning) flags you wish to use
 
 # Specify Files
-SRC_FILES = src/main.cpp # List all source files (include src/ directory)
+SRC_FILES = src/main.cpp src/board.cpp # List all source files (include src/ directory)
 OBJ_FILES = main.o  # List all object files (omit src/ directory)
 
 # Specify include directoriy / lib archive file path

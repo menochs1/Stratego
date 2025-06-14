@@ -1,5 +1,5 @@
 #include <raylib.h> // Include the raylib library header file
-
+#include "board.h"
 using namespace std;
 
 // Dimensions of the window

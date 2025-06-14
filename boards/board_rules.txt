@@ -1,0 +1,31 @@
+# this is the rough idea on how saving the game / initilizing the board will work #
+# peices #
+0 
+W 4
+F,1 Flag (can be captured by anyone and what you capture to win) cannot move
+1,1 spy (can capture marshal)
+2,8 scouts (moves like a rook / also can attack on same turn as move)
+3,5 miner (can defuse bombs) 
+4,4 Sergents
+5,4 Lieutenants
+6,4 Captians
+7,3 Majors
+8,2 Colonels
+9,1 General
+10,1 Marshal
+12,6 Bomb (only beat by 3) cannot move
+
+10 10 0 # might get rid of this but it will determine the size of the board, third number could be what rule set to use.
+6 6 6 6 7 7 7 8 8 9
+10 2 2 2 2 2 2 2 1 5
+5 5 4 4 4 4 3 3 3 3
+11 11 11 11 11 11 0 2 3 10
+0 0 W W 0 0 0 0 W W 0 0
+0 0 W W 0 0 0 0 W W 0 0
+11 11 11 11 11 11 0 2 3 10
+5 5 4 4 4 4 3 3 3 3
+10 2 2 2 2 2 2 2 1 5
+6 6 6 6 7 7 7 8 8 9
+
+# the plan to determine inital player characters is anything =< 3 for Y be player 1/2 #
+# and any piece => 6 initilized to player 2/1 #
